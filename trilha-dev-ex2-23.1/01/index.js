@@ -1,4 +1,4 @@
-// Crie sua função aqui
+// F Crie sua função aqui
 function sumIsEven (a, b) {
     if (a+b % 2 == 0)
         return true;

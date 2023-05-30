@@ -1,4 +1,4 @@
-// Crie sua função aqui
+// F Crie sua função aqui
 function oneToNumber (num){
     //criando uma lista para armazenar os valores
     let list = []

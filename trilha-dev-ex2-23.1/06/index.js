@@ -1,4 +1,4 @@
-// Crie sua função aqui
+// F Crie sua função aqui
 function factorial (num){
     var produto = 1;
     for (num; num >= 2; num--){

@@ -1,9 +1,13 @@
 // Crie sua função aqui
-
 async function delayedSumArray (lista){
-  let valor = await sumAPI(lista);
-  return valor
+  return sumAPI(lista)
+   .then((arrayPreenchido) => console.log(arrayPreenchido))
+   //esse .message não faz sentido na minha mente!
+   //eu não vejo sentido colocar .message na promisse rejeitada
+   //e não colocar .message na aceita
+   .catch((arrayVazio) => console.log(arrayVazio.message))
 }
+
 
 // Não altere as linhas abaixo
 
@@ -31,3 +35,13 @@ function sumAPI(array) {
   await delayedSumArray([0])
   await delayedSumArray([])
 })()
+
+
+/*
+  TENTATIVA DE RESOLUÇÃO QUE DEU ERRADO
+  async function delayedSumArray (lista){
+    let valor = 0;
+    valor = await sumAPI(lista)
+    return console.log(valor)
+  }
+*/

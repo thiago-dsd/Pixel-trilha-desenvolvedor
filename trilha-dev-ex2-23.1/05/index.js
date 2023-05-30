@@ -1,6 +1,6 @@
-// Crie sua função aqui
+// F Crie sua função aqui
 function evenArray (num){
-    //é o meso princípio da anterior
+    //é o mesmo princípio da anterior
     let list = []
     for (i = 0; i <= num; i += 2){
         list.push(i)
